@@ -1,5 +1,8 @@
 tag @s add training_mode
 
+# Keep this run invalid even after leaving training mode.
+tag @s add run_invalid
+
 title @s times 5 40 5
 title @s title {text:""}
 title @s subtitle {text:"Enabled training mode",color:"green"}

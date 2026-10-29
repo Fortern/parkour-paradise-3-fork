@@ -1,3 +1,10 @@
+# Cancel any pending settlement before resetting this run's eligibility.
+tag @s remove end_timer
+scoreboard players reset @s end_timer
+
+tag @s remove run_invalid
+execute if entity @s[tag=training_mode] run tag @s add run_invalid
+
 scoreboard players set @s time 0
 scoreboard players set @s time_display 0
 scoreboard players set @s time_tick 0

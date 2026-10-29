@@ -12,5 +12,6 @@ execute unless score @s calc_m matches 1 run tellraw @s [{score:{name:"@s",objec
 tellraw @s[scores={calc_s=1}] [{text:"And ",color:"yellow"},{text:"1",color:"white"},{text:" second!",color:"yellow"}]
 execute unless score @s calc_s matches 1 run tellraw @s [{text:"And ",color:"yellow"},{score:{name:"@s",objective:"calc_s"},color:"white"},{text:" seconds!",color:"yellow"}]
 
-execute as @s[tag=!training_mode] unless score @s time_pb matches 2147483647 run function time:pb/main
-execute as @s[tag=!training_mode] if score @s time_pb matches 2147483647 run scoreboard players operation @s time_pb = @s finaltime
+execute if entity @s[tag=run_invalid] run tellraw @s {text:"Training run: personal best and rank advancements will not be updated.",color:"yellow"}
+execute as @s[tag=!training_mode,tag=!run_invalid] unless score @s time_pb matches 2147483647 run function time:pb/main
+execute as @s[tag=!training_mode,tag=!run_invalid] if score @s time_pb matches 2147483647 run scoreboard players operation @s time_pb = @s finaltime

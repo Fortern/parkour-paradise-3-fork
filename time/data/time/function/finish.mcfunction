@@ -1,5 +1,8 @@
 advancement grant @s only main:finish
 
+# Preserve ineligibility throughout the delayed settlement.
+execute if entity @s[tag=training_mode] run tag @s add run_invalid
+
 scoreboard players operation @s finaltime = @s time
 function time:rank/calculate
 
