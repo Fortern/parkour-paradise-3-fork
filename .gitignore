@@ -1,0 +1,66 @@
+# IDE and editor configuration
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.vs/
+.fleet/
+.zed/
+.settings/
+.project
+.classpath
+*.code-workspace
+
+# Operating system files
+.DS_Store
+._*
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor backups and temporary files
+*~
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
+*.tmp
+*.temp
+
+# Logs and local caches
+*.log
+logs/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local tooling dependencies and generated output
+node_modules/
+.venv/
+venv/
+/build/
+/dist/
+/out/
+/tmp/
+/temp/
+
+# Local environment settings (keep example files shareable)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Other
+*.zip
+*.sh
+*.ps1
+*.bat
+*.cmd
