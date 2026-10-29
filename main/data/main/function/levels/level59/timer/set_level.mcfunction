@@ -1,0 +1,9 @@
+execute as @s[scores={lvl59_tick=1},tag=!lvl59_up] run function main:levels/level59/timer/0
+execute as @s[scores={lvl59_tick=20}] run function main:levels/level59/timer/1
+execute as @s[scores={lvl59_tick=40}] run function main:levels/level59/timer/2
+execute as @s[scores={lvl59_tick=60}] run function main:levels/level59/timer/3
+execute as @s[scores={lvl59_tick=80}] run function main:levels/level59/timer/4
+execute as @s[scores={lvl59_tick=100}] run function main:levels/level59/timer/5
+execute as @s[scores={lvl59_tick=120}] run function main:levels/level59/timer/6
+execute as @s[scores={lvl59_tick=140}] run function main:levels/level59/timer/7
+execute as @s[scores={lvl59_tick=160},tag=lvl59_up] run function main:levels/level59/timer/8

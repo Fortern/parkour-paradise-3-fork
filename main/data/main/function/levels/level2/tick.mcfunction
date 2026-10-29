@@ -1,0 +1,2 @@
+execute at @s[gamemode=!spectator] if block ~ ~ ~ water run function main:levels/level2/tp
+execute at @s[gamemode=!spectator] if block ~ ~ ~ #main:waterlogged[waterlogged=true] run function main:levels/level2/tp

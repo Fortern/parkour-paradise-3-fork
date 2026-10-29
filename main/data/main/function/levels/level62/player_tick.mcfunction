@@ -1,0 +1,1 @@
+execute as @s[x=-114,y=56,z=975,dx=-1,dy=0,dz=-1] run function main:levels/level62/tp

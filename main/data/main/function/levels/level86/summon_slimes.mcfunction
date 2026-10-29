@@ -1,0 +1,2 @@
+summon slime -22.0 44.9 1033.0 {NoAI:1b,Size:4,Rotation:[270f,0f],Invulnerable:1b,Tags:["lvl86slime"],PersistenceRequired:1b}
+summon slime -26.0 44.9 1030.98 {NoAI:1b,Size:4,Rotation:[180f,0f],Invulnerable:1b,Tags:["lvl86slime"],PersistenceRequired:1b}

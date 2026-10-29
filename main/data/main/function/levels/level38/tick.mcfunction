@@ -1,0 +1,1 @@
+execute at @s[gamemode=!spectator] if block ~ ~ ~ water run function main:levels/level38/tp

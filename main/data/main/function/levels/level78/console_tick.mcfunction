@@ -1,0 +1,2 @@
+execute as @s[tag=lvl78_ready] if block -81 60 1010 acacia_pressure_plate[powered=true] run function main:levels/level78/summon_minecart
+execute if block -81 60 1010 acacia_pressure_plate[powered=false] run tag @s add lvl78_ready

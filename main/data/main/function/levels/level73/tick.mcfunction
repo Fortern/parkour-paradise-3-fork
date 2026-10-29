@@ -1,0 +1,1 @@
+clear @s elytra[minecraft:custom_data~{"hielkemaps:item":true}]
