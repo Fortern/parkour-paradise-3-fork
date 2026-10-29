@@ -18,5 +18,6 @@ scoreboard objectives add tm_uuid dummy
 scoreboard objectives add tm_delay dummy
 
 scoreboard objectives add training_mode trigger
+scoreboard objectives add to_level trigger
 
 scoreboard objectives add temp dummy

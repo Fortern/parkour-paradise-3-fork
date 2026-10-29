@@ -8,5 +8,8 @@ execute as @a[scores={training_mode=1..}] run function trainingmode:trigger
 execute as @a[tag=training_mode] run function trainingmode:when_active
 execute as @a[tag=inRace] as @s[tag=training_mode] run function trainingmode:leave
 
+# Process requests after training mode changes and race restrictions.
+execute as @a run function trainingmode:to_level/tick
+
 #hide flying players
 effect give @a[tag=flight] invisibility 1 10 true
