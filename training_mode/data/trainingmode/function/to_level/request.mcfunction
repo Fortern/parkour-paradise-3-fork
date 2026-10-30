@@ -30,7 +30,9 @@ scoreboard players set @s firedamage 0
 execute as @s[tag=tm_timer_running] run function trainingmode:timer/disable
 tag @s remove tm_wait_for_movement
 scoreboard players operation @s level = @s to_level
-scoreboard players operation @s level_display = @s to_level
+# Destination 101 is the final checkpoint of level 100.
+execute if score @s to_level matches 101 run scoreboard players set @s level 100
+scoreboard players operation @s level_display = @s level
 execute if score @s to_level matches 101 run tag @s add end
 execute in minecraft:overworld run function trainingmode:to_level/teleport
-tellraw @s [{text:"Training: teleported to level ",color:"green"},{score:{name:"@s",objective:"to_level"}},{text:"."}]
+tellraw @s [{text:"Training: teleported to level ",color:"green"},{score:{name:"@s",objective:"level"}},{text:"."}]
