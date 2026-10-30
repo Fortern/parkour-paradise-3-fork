@@ -2,8 +2,9 @@
 tag @s remove end_timer
 scoreboard players reset @s end_timer
 
+# Start a fresh competitive run after clearing training mode.
+execute if entity @s[tag=training_mode] run function time:start/leave_training
 tag @s remove run_invalid
-execute if entity @s[tag=training_mode] run tag @s add run_invalid
 
 scoreboard players set @s time 0
 scoreboard players set @s time_display 0
