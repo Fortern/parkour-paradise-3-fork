@@ -9,3 +9,6 @@ execute as @s[scores={show_PB=1..}] run function time:pb/show/check
 #ranks
 scoreboard players enable @s ranks
 execute as @s[scores={ranks=1..}] run function time:rank/display/main
+
+scoreboard players enable @s leaderboard
+execute as @s[scores={leaderboard=1..}] run function time:leaderboard/show

@@ -21,8 +21,11 @@
 | `/trigger training_mode` | 开启练习模式，再次输入即可关闭。 |
 | `/trigger to_level set 42` | 在练习模式下前往第 42 关。将 `42` 换成想去的关卡编号，范围为 1～101。 |
 | `/trigger show_PB` | 查看个人最佳通关时间（PB）。 |
+| `/trigger leaderboard` | 查看最佳通关时间前 10 名，包含离线玩家。相同用时并列排名。 |
 | `/trigger reset_PB` | 清除个人最佳纪录和评级进度。 |
 | `/trigger ranks` | 查看各评级对应的通关时间要求。 |
+
+排行榜按个人最佳时间从短到长排列，最多显示 10 条记录。玩家离线后成绩仍保留，执行 `/trigger reset_PB` 会移除自己的记录。
 
 ## 练习模式
 

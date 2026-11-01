@@ -69,3 +69,4 @@ team modify finished color gold
 scoreboard objectives add show_PB trigger {text:"Show PB",color:"yellow",bold: true}
 scoreboard objectives add reset_PB trigger {text:"Reset PB",color:"yellow",bold: true}
 scoreboard objectives add ranks trigger {text:"Ranks",color:"gold",bold: true}
+function time:leaderboard/load
